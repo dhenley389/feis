@@ -123,7 +123,7 @@ def detect_nsfw(vision_frame : VisionFrame) -> List[Score]:
 		nsfw_scores_raw = nsfw_scores_raw[keep_indices]
 		nsfw_scores = nsfw_scores_raw.ravel().tolist()
 
-	return 0
+	return []
 
 
 def forward(vision_frame : VisionFrame) -> Detection:
